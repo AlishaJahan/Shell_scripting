@@ -1,0 +1,14 @@
+<!/bin/bash
+
+<<comment
+this is the example of if else condition
+comment
+
+read -p "your name is: " name
+
+if [[$name== "alisha"]];
+then
+    echo"your name is alisha"
+else 
+    echo"your name is not alisha"
+fi
