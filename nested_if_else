@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Read a number from user
+echo "Enter a number:"
+read num
+
+if [ $num -gt 0 ]; then
+    echo "The number is positive."
+    
+    # Nested if to check even or odd
+    if [ $((num % 2)) -eq 0 ]; then
+        echo "It is also even."
+    else
+        echo "It is also odd."
+    fi
+
+elif [ $num -lt 0 ]; then
+    echo "The number is negative."
+else
+    echo "The number is zero."
+fi
